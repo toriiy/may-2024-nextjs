@@ -1,21 +1,22 @@
 import React from 'react';
 import Link from "next/link";
+import styles from './Menu.module.css'
 
 const Menu = () => {
     return (
         <div>
-            <ul>
+            <ul className={styles.nav}>
                 <li>
-                    <Link href={'/'}>Home Page</Link>
+                    <Link href={'/'} className={styles.navLink}>Home Page</Link>
                 </li>
                 <li>
-                    <Link href={'/users'}>Users Page</Link>
+                    <Link href={'/users'} className={styles.navLink}>Users Page</Link>
                 </li>
                 <li>
-                    <Link href={'/posts'}>Posts Page</Link>
+                    <Link href={'/posts'} className={styles.navLink}>Posts Page</Link>
                 </li>
                 <li>
-                    <Link href={'/comments'}>Comments Page</Link>
+                    <Link href={'/comments'} className={styles.navLink}>Comments Page</Link>
                 </li>
             </ul>
         </div>

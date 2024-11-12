@@ -3,7 +3,7 @@ import {IUser} from "@/models/IUser";
 import UserShortInfo from "@/components/user-short-info/UserShortInfo";
 
 type PropsType = {
-    users: IUser[];
+    users: IUser[]
 }
 const Users: FC<PropsType> = ({users}) => {
     return (
